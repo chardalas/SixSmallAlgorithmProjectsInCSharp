@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace binary_node1
 {
@@ -10,6 +6,27 @@ namespace binary_node1
 	{
 		static void Main(string[] args)
 		{
+			BinaryNode<string> root = new BinaryNode<string>("Root");
+
+			var a = new BinaryNode<string>("A");
+			var b = new BinaryNode<string>("B");
+			var c = new BinaryNode<string>("C");
+			var d = new BinaryNode<string>("D");
+			var e = new BinaryNode<string>("E");
+			var f = new BinaryNode<string>("F");
+
+			a.AddRight(d);
+			a.AddLeft(c);
+
+			b.AddRight(e);
+			e.AddLeft(f);
+
+			root.AddLeft(a);
+			root.AddRight(b);
+
+			root.PrintTree(root);
+			Console.ReadLine();
 		}
 	}
 }
+
