@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF3DE207-C802-4A0B-9E38-543C314CBD46}</ProjectGuid>
+    <ProjectGuid>{8B498E5C-314F-4852-8A86-8E23014177A5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>binary_node1</RootNamespace>
-    <AssemblyName>binary_node1</AssemblyName>
+    <RootNamespace>NaryNode</RootNamespace>
+    <AssemblyName>NaryNode</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryNode.cs" />
     <Compile Include="NaryNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
