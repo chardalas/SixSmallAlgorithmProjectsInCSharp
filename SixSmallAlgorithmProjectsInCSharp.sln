@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "binary_node1", "binary_node
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaryNode", "NaryNode\NaryNode.csproj", "{8B498E5C-314F-4852-8A86-8E23014177A5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NodeClasses", "NodeClasses", "{6671FFAC-3358-4257-9628-D9D6751FD24C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Outlineviews", "Outlineviews", "{E9A9A6B9-2B7A-48B1-A652-3F8EA0D3DF45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF3DE207-C802-4A0B-9E38-543C314CBD46} = {6671FFAC-3358-4257-9628-D9D6751FD24C}
+		{8B498E5C-314F-4852-8A86-8E23014177A5} = {6671FFAC-3358-4257-9628-D9D6751FD24C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5301D224-0A6B-4492-9970-9FBD60570E26}
