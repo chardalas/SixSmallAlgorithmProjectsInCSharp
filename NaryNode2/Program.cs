@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NodeClasses.NaryNode
+namespace Outlineviews.NaryNode
 {
 	class Program
 	{

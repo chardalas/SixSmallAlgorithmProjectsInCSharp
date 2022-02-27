@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NodeClasses.NaryNode
+namespace Outlineviews.NaryNode
 {
 	class NaryNode<T>
 	{
