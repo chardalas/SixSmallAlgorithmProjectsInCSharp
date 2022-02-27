@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NaryNode
+namespace NodeClasses.NaryNode
 {
 	class Program
 	{

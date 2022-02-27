@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NaryNode
+namespace NodeClasses.NaryNode
 {
 	class NaryNode<T>
 	{

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NodeClasses.binary_node
+namespace Outlineviews.binary_node
 {
 	class BinaryNode<T>
 	{
