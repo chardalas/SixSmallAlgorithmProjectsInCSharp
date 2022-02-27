@@ -21,14 +21,19 @@ namespace Outlineviews.NaryNode
 
 		public override string ToString()
 		{
-			string values = Value.ToString() + ":";
+			return ToString("");
+		}
+
+		public string ToString(string spaces)
+		{
+			var result = string.Format("{0}{1}:\n", spaces, Value);
 
 			foreach (var child in Children)
 			{
-				values += string.Format(" {0} ", child.Value);
+				result += child.ToString(spaces + "  ");
 			}
 
-			return values;
+			return result;
 		}
 	}
 }

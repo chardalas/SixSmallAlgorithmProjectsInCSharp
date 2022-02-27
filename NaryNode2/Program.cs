@@ -32,16 +32,7 @@ namespace Outlineviews.NaryNode
 			root.AddChild(b);
 			root.AddChild(c);
 
-			Console.WriteLine(root);
-			Console.WriteLine(a);
-			Console.WriteLine(b);
-			Console.WriteLine(c);
-			Console.WriteLine(d);
-			Console.WriteLine(e);
-			Console.WriteLine(f);
-			Console.WriteLine(g);
-			Console.WriteLine(h);
-			Console.WriteLine(i);
+			Console.WriteLine(root.ToString());
 
 			Console.Read();
 		}
