@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Outlineviews.binary_node
+namespace ExhaustiveSearch.binary_node
 {
 	class Program
 	{
@@ -24,9 +24,26 @@ namespace Outlineviews.binary_node
 			root.AddLeft(a);
 			root.AddRight(b);
 
-			root.PrintTree(root);
+			FindValue(root, "E");
+
+
 			Console.ReadLine();
 		}
+
+		static void FindValue(BinaryNode<string> root, string target)
+		{
+			var node = root.FindNode(target);
+
+			if (node != null)
+			{
+				Console.WriteLine("Node {0} was found", node.Value);
+			}
+			else
+			{
+				Console.WriteLine("Node {0} was not found", target);
+			}
+		}
+
 	}
 }
 

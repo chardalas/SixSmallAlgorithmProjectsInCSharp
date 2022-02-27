@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Outlineviews.binary_node
+namespace ExhaustiveSearch.binary_node
 {
 	class BinaryNode<T>
 	{
@@ -25,23 +25,43 @@ namespace Outlineviews.binary_node
 			LeftChild = child;
 		}
 
+		public BinaryNode<T> FindNode(T target)
+		{
+
+			if (Value.Equals(target))
+			{
+				return this;
+			}
+
+			if (LeftChild != null)
+			{
+				var node = LeftChild.FindNode(target);
+
+				if (node != null)
+				{
+					return node;
+				}
+			}
+
+			if (RightChild != null)
+			{
+				var node = RightChild.FindNode(target);
+
+				if (node != null)
+				{
+					return node;
+				}
+			}
+
+
+			return null;
+		}
+
 		public override string ToString()
 		{
 			return string.Format("{0}: {1} {2}\n", Value,
 				LeftChild == null ? (object)"null" : LeftChild.Value,
 				RightChild == null ? (object)"null" : RightChild.Value);
-		}
-
-		public void PrintTree(BinaryNode<T> node)
-		{
-			if (node == null)
-			{
-				return;
-			}
-
-			Console.Write(node.ToString());
-			PrintTree(node.LeftChild);
-			PrintTree(node.RightChild);
 		}
 	}
 }
