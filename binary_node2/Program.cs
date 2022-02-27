@@ -24,7 +24,7 @@ namespace Outlineviews.binary_node
 			root.AddLeft(a);
 			root.AddRight(b);
 
-			root.PrintTree(root);
+			root.ToString();
 			Console.ReadLine();
 		}
 	}

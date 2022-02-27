@@ -13,6 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "binary_node", "binary_node1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaryNode", "NaryNode1\NaryNode.csproj", "{4CCD6B18-D90A-4D42-890B-4CE0663F3BD3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExhaustiveSearch", "ExhaustiveSearch", "{88D2087C-718A-4C81-8754-8BF2FF4923AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Traversals", "Traversals", "{EB97C378-1288-46F4-B2A0-701A7570502F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Drawing", "Drawing", "{D6DDA3E4-90DF-4861-AB1D-150C2BD8278F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

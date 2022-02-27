@@ -27,21 +27,30 @@ namespace Outlineviews.binary_node
 
 		public override string ToString()
 		{
-			return string.Format("{0}: {1} {2}\n", Value,
-				LeftChild == null ? (object)"null" : LeftChild.Value,
-				RightChild == null ? (object)"null" : RightChild.Value);
+			return ToString("");
 		}
 
-		public void PrintTree(BinaryNode<T> node)
+		public string ToString(string spaces)
 		{
-			if (node == null)
+			Console.Write(string.Format("{0}{1}: \n", spaces, Value));
+
+
+			if (LeftChild == null || RightChild == null)
 			{
-				return;
+				Console.Write(string.Format("{0}None\n", spaces + "  "));
 			}
 
-			Console.Write(node.ToString());
-			PrintTree(node.LeftChild);
-			PrintTree(node.RightChild);
+			if (LeftChild != null)
+			{
+				LeftChild.ToString(spaces + "  ");
+			}
+
+			if (RightChild != null)
+			{
+				RightChild.ToString(spaces + "  ");
+			}
+
+			return "";
 		}
 	}
 }
